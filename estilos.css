@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.tarjeta {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    padding: 20px;
+    text-align: center;
+}
+
+.nombre-de-usuario h1 {
+    font-size: 2rem; /* Tamaño de la fuente */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    font-weight: 700; /* Grosor de la fuente */
+    letter-spacing: 1.5px; /* Espacio entre letras */
+    text-transform: uppercase; /* Convertir a mayúsculas */
+    background: linear-gradient(90deg, #3498db, #8e44ad); /* Gradiente de colores */
+    background-clip: text; /* Clip de fondo para texto */
+    -webkit-background-clip: text; /* Para navegadores WebKit (Chrome, Safari) */
+    -moz-background-clip: text; /* Para Firefox */
+    -webkit-text-fill-color: transparent; /* Hacer el texto transparente para mostrar el gradiente */
+    font-family: 'Poppins', sans-serif;/* Aplicar la fuente seleccionada */
+}
+
+
+
+.descripcion p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.descripcion img {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 15px;
+}
+
+.boton-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.boton-redes-sociales a {
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-redes-sociales a:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para el aviso de confirmación */
+.confirm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.confirm-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 300px;
+}
+
+.confirm-box p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.confirm-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.confirm-btn.yes {
+    background-color: #28a745;
+    color: white;
+}
+
+.confirm-btn.no {
+    background-color: #dc3545;
+    color: white;
+}
+
+.confirm-btn:hover {
+    opacity: 0.8;
+}
